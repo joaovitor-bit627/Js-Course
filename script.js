@@ -49,8 +49,19 @@ const restaurant = {
   }
 };
 
+const arr = [7, 8, 9, 10, 11]
+const badNewArr = [1, 2, arr[0], arr[1], arr[2]]
+console.log(badNewArr)
 
+const newArr = [1, 2, ...arr]
+console.log(newArr)
 
+// copy array
+const mainMenuCopy = [ ...restaurant.mainMenu]
+
+//join 2 arrays
+const menu = [ ...restaurant.starterMenu, ...restaurant.starterMenu]
+console.log(menu)
 /* console.log(restaurant.order(2, 0))
 
  let [main, secondery] = restaurant.categories;
